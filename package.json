@@ -1,0 +1,20 @@
+{
+  "name": "mobile-ux-audit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Аудит мобильной версии сайта: скорость, цели нажатия, картинки, контраст, плашка cookie, доступность (axe)",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "test": "node --test tap.test.mjs"
+  },
+  "dependencies": {
+    "axe-core": "4.13.0",
+    "chrome-launcher": "1.2.1",
+    "lighthouse": "13.4.1",
+    "playwright": "1.62.1"
+  }
+}
